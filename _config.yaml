@@ -1,0 +1,16 @@
+domains: 
+  - domain: "example.com"
+    subdomains: 
+    - ""
+    - "[[subdomain #1]]."
+    - "[[subdomain #2]]."
+to_email: "[[my main email]]"
+from_email: "[[my nag email @gmail.com]]"
+smtp:
+  domain: "gmail.com"
+  server: "smtp.gmail.com"
+  port: 587
+  account: '[[my nag email @gmail.com]]'
+  password: "[[my nag email's password]]"
+
+

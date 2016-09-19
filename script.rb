@@ -37,7 +37,6 @@ domains.each do |site|
 	site["subdomains"].each do |subdomain|
 		uri = URI("http://#{subdomain}#{site["domain"]}")
 		begin
-			puts uri
 			response = Net::HTTP.get_response(uri)
 			if response.code != "200"
 				pp "Error: #{uri.host}\nCode: #{response.code}\n Sending mail..."
